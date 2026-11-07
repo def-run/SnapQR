@@ -1,0 +1,43 @@
+:root {
+    --color-black: #040303;
+    --color-pine-teal: #3A4E48;
+    --color-med-teal: #6A7B76;
+    --color-sage: #8B9D83;
+    --color-beige: #BEB0A7;
+    --bg-light: #F4F2F0;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg-light);
+    color: var(--color-black);
+}
+
+header {
+    background-color: var(--color-pine-teal);
+    padding: 1.2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo-subtitle {
+    font-size: 0.85rem;
+    color: var(--color-beige);
+    letter-spacing: 0.5px;
+}

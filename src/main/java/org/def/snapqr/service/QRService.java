@@ -57,6 +57,9 @@ public class QRService {
 
             return baos.toByteArray();
         } catch (WriterException | IOException | IllegalArgumentException e) {
+
+            e.printStackTrace();
+
             throw new QrGenerationException(
                     "Failed to generate QR code",
                     e
