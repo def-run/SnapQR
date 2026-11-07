@@ -1,0 +1,165 @@
+:root {
+    --color-black: #040303;
+    --color-pine-teal: #3A4E48;
+    --color-med-teal: #6A7B76;
+    --color-sage: #8B9D83;
+    --color-beige: #BEB0A7;
+    --bg-light: #F4F2F0;
+}
+
+
+
+#qr-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 450px;
+    padding: 28px;
+    background-color: #FFFFFF;
+    border: 1px solid var(--color-beige);
+    border-radius: 12px;
+}
+
+/* Form labels */
+#qr-form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+/* Input fields */
+#qr-form input,
+#qr-form select,
+#qr-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--color-beige);
+    border-radius: 7px;
+    background-color: var(--bg-light);
+    color: var(--color-black);
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Focus state */
+#qr-form input:focus,
+#qr-form select:focus,
+#qr-form textarea:focus {
+    border-color: var(--color-med-teal);
+    box-shadow: 0 0 0 2px rgba(106, 123, 118, 0.15);
+}
+
+/* Textarea */
+#qr-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Color inputs */
+#qr-form input[type="color"] {
+    height: 45px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+/* Generate button */
+#qr-form button {
+    padding: 13px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--color-pine-teal);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#qr-form button:hover {
+    background-color: var(--color-med-teal);
+}
+
+
+/* Main layout */
+.generator-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Both panels */
+.generator-panel,
+.preview-panel {
+    background-color: #FFFFFF;
+    padding: 28px;
+    border: 1px solid var(--color-beige);
+    border-radius: 12px;
+}
+
+.generator-panel h2,
+.preview-panel h2 {
+    color: var(--color-black);
+    margin-bottom: 24px;
+}
+
+/* Preview window */
+.qr-preview-window {
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-light);
+    border: 2px dashed var(--color-beige);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Placeholder */
+.preview-placeholder {
+    color: var(--color-med-teal);
+    text-align: center;
+}
+
+/* Generated QR image */
+#qr-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Download button */
+#download-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px;
+    background-color: var(--color-pine-teal);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#download-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .generator-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.pcr-button {
+    width: 45px;
+    height: 35px;
+    border-radius: 6px;
+}

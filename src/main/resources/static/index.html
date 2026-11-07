@@ -1,10 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapQR - QR Code Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/generator.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
 </head>
 <body>
-$END$
+    <header>
+        <div class="logo">SnapQR</div>
+        <div class="logo-subtitle">Simple, Fast and Customizable</div>
+    </header>
+
+
+    <main class="generator-container">
+        <section class="generator-panel">
+            <h2>Create QR Code</h2>
+            <form class="qr-form" id="qr-form">
+
+                <label for="content-type">Content Type</label>
+                <select id="content-type">
+                    <option value="URL">URL</option>
+                    <option value="TEXT">TEXT</option>
+                </select>
+
+                <label for="content">Enter Content</label>
+                <textarea
+                        name="content"
+                        id="content"
+                        placeholder="Enter URL or text here"
+                        required></textarea>
+
+                <label>Foreground Color</label>
+                <div id="foreground-picker"></div>
+
+                <label>Background Color</label>
+                <div id="background-picker"></div>
+
+                <label for="qr-size">QR Code Size</label>
+                <select id="qr-size" name="size">
+                    <option value="200">200 × 200</option>
+                    <option value="300">300 × 300</option>
+                    <option value="400" selected>400 × 400</option>
+                    <option value="500">500 × 500</option>
+                </select>
+
+                <button type="submit">Generate QR Code</button>
+            </form>
+        </section>
+        <section class="preview-panel">
+            <h2>QR Preview</h2>
+            <div class="qr-preview-window" id="qr-preview">
+
+                <div class="preview-placeholder" id="preview-placeholder">
+                    <p>Your QR code will appear here</p>
+                </div>
+
+                <img
+                        id="qr-image"
+                        src=""
+                        alt="Generated QR Code"
+                        hidden
+                >
+
+            </div>
+            <button type="button" id="download-btn" disabled>
+                Download QR Code
+            </button>
+        </section>
+    </main>
+
+    <script src="js/generator.js"></script>
+
 </body>
 </html>
