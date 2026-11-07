@@ -26,7 +26,7 @@ public class QRController {
     )
     public ResponseEntity<byte[]> generateStaticQR(
             @Valid @RequestBody StaticQRRequest request
-    ) throws Exception {
+    ) {
         byte[] qrImage = qrService.generateQRCode(request);
 
         return ResponseEntity.ok()
