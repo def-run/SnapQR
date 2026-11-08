@@ -2,5 +2,19 @@ spring:
   application:
     name: SnapQR
 
+  datasource:
+    url: jdbc:mysql://localhost:3306/snapqr
+    username: root
+    password: 160406
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
 server:
   port: ${PORT:10000}
