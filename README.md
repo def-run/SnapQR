@@ -12,12 +12,23 @@ A simple and customizable QR code generator that allows users to generate QR cod
 - Responsive design for different screen sizes.
 - Download generated QR codes.
 
-## Tech Stack
+Tech Stack
 
-- HTML
-- CSS
-- JavaScript
-- [Add backend technologies here, if applicable]
+Frontend
+
+HTML
+
+CSS
+
+JavaScript
+
+Backend
+
+Java
+
+Spring Boot
+
+Maven
 
 ## Getting Started
 
