@@ -1,7 +1,6 @@
 package org.def.snapqr.entity;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
 import org.hibernate.annotations.Generated;
 import org.hibernate.generator.EventType;
 
@@ -16,7 +15,7 @@ import java.time.LocalDateTime;
             )
         }
 )
-public class QRScans {
+public class QRScan {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
