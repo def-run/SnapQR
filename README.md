@@ -30,3 +30,20 @@ A simple and customizable QR code generator that allows users to generate QR cod
 
    ```bash
    git clone https://github.com/YOUR_USERNAME/SnapQR.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd SnapQR
+   ```
+
+3. Open `index.html` in your browser or run the project using a local development server.
+
+## Live Demo
+
+[https://snapqr-eqeo.onrender.com](https://snapqr-eqeo.onrender.com)
+
+## License
+
+This project is open-source and available under the MIT License.
