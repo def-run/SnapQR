@@ -9,26 +9,20 @@ A simple and customizable QR code generator that allows users to generate QR cod
 - Generate QR codes from user-provided content.
 - Customize QR code colors.
 - Simple and clean user interface.
-- Responsive design for different screen sizes.
+- Responsive design.
 - Download generated QR codes.
 
-Tech Stack
+## Tech Stack
 
-Frontend
+**Frontend**
+- HTML
+- CSS
+- JavaScript
 
-HTML
-
-CSS
-
-JavaScript
-
-Backend
-
-Java
-
-Spring Boot
-
-Maven
+**Backend**
+- Java
+- Spring Boot
+- Maven
 
 ## Getting Started
 
@@ -36,20 +30,3 @@ Maven
 
    ```bash
    git clone https://github.com/YOUR_USERNAME/SnapQR.git
-   ```
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd SnapQR
-   ```
-
-3. Open `index.html` in your browser or run the project using a local development server.
-
-## Live Demo
-
-Visit [SnapQR](https://snapqr-eqeo.onrender.com) to try the application.
-
-## License
-
-This project is open-source and available under the MIT License.
